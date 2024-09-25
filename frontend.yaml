@@ -30,7 +30,7 @@
       remote_src: yes
     
   - name: copy backend conf
-    ansible.builtin.unarchive:
+    ansible.builtin.copy:
       src: expense.conf
       dest: /etc/nginx/default.d/expense.conf
   
